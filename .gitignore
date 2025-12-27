@@ -1,0 +1,28 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Mac
+.DS_Store
+
+# Temporary files
+*.pdf
+!RIL-IR2023-FinancialStatement.pdf  # Keep the sample if needed, but usually exclude large PDFs
+dummy.pdf
+dummy_inspect.pdf
+RIL-Integrated-Annual-Report-2024-25.pdf
+
+# IDEs
+.vscode/
+.idea/
+
