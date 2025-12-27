@@ -53,6 +53,11 @@ The system is built using a modular RAG (Retrieval-Augmented Generation) pipelin
 uv run streamlit run app.py
 ```
 
+## Documentation
+*   **[Architecture Overview](architecture_overview.md)**: A 1-page summary of the system design.
+*   **[Cost Estimate](cost_estimate.md)**: Detailed analysis for scaling to 1000 users.
+*   **[Interview Answers](interview_answers.md)**: Responses to the specific assignment questions (bottlenecks, accuracy, etc.).
+
 ## Cost Estimate (Summary)
 For a production system serving 1000 concurrent files:
 *   **Hosting**: ~$40/hour total.
