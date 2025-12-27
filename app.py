@@ -21,8 +21,13 @@ st.set_page_config(
 # Initialize Session State
 if "rag" not in st.session_state:
     st.session_state.rag = RAGSystem()
+
+@st.cache_resource
+def get_ingestor():
+    return PDFIngestor()
+
 if "ingestor" not in st.session_state:
-    st.session_state.ingestor = PDFIngestor()
+    st.session_state.ingestor = get_ingestor()
 if "llm" not in st.session_state:
     # UPDATED: Using a widely available flash model. 
     # If you have access to specific '2.5' or '2.0' endpoints, update the model_name here.
